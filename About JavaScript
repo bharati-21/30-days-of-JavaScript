@@ -1,0 +1,12 @@
+1. What is JavaScript?
+- High level, interpreted programming language
+- Follows the ECMAScript specification
+- Multi-paradigm language: Can write Object oriented code or functional code
+- Runs on the client/ browser
+- Can run JavaScript on the browser using Node.js
+
+2. Why JavaScript?
+- JavaScript can run on the client side on the browser
+- Interactive frameworks such as React, Vue, Angular can be used to build JavaScript interfaces
+- JavaScript can be used in mobile development using React Native, NativeScript, Ionic
+- JavaScript is also used to build desktop apps using the framework Electron JS
