@@ -10,3 +10,25 @@
 - Interactive frameworks such as React, Vue, Angular can be used to build JavaScript interfaces
 - JavaScript can be used in mobile development using React Native, NativeScript, Ionic
 - JavaScript is also used to build desktop apps using the framework Electron JS
+
+3. Data types in JavaScript
+i) Primitive types
+- stored directly in the location the variable accesses
+- Stored on disk
+- String
+- Number 
+- Boolean
+- Null
+- Undefined 
+- Symbols (ES6)
+ii) Reference
+- Accessed by a reference
+- Objects stored in the heap
+- Arrays
+- Object Literals
+- Functions
+- Dates
+
+- Types are associated with values and not variables
+- JavaScript is a dynamic language. You do not define the type of data variable holds during DECLARATIONS
+- Same variable can hold multiple Types
