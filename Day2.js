@@ -31,7 +31,8 @@
         console.log('Hello world');
         console.log('Hello world');
     console.timeEnd('Hello'); //Time taken from beginning of time 'Hello' to the end.
-    console.clear();
+
+    console.clear(); //Clearing the console
 
 /*********************************************************************************/
 
@@ -71,7 +72,8 @@ console.log("VARIABLES AND DECLARATIONS");
     //cannot reassign const
     //reassign = 'Sharada';
     //const x; -> Not allowed; Have to assign values to const variables
-    console.clear();
+
+    console.clear(); //Clearing the console
 
 
 // 4. DATA TYPES IN JAVASCRIPT 
@@ -172,11 +174,4 @@ console.log("TYPE CONVERSION");
     console.log("Value of variable = ", sum);
     console.log("Datatype of variable after conversion = ", typeof sum); //converts 6 to string   
 
-
-
-
-
-
-
-
-
+    console.clear() //Clearing the console
