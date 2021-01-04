@@ -16,7 +16,7 @@ let val;
     val = num1 % num2;
     console.log("Remainder: ", val);
 
-    console.clear(); //Clearing the console
+    //console.clear(); //Clearing the console
 
     // 6.2) Math Object
     console.log("MATH OBJECTS");
@@ -107,4 +107,4 @@ document.body.innerHTML = html;
 */
 
 
-console.clear(); //Clearing the console
+//console.clear(); //Clearing the console
