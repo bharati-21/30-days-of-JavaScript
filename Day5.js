@@ -224,3 +224,64 @@ switch(new Date().getDay()) {
         console.log("Today is Saturday");
         break;
 }
+
+// 14. FUNCTION DECLARATIONS AND EXPRESSIONS
+    
+    // 14.1) Function Declarations
+    function greet() {
+        console.log("Hello");
+    }
+    greet(); //function call
+
+    function greet2() {
+        return 'Hello with return statement';
+    }
+    console.log(greet2());
+
+    function greet3(fname) {
+        return 'Hello ' + fname;
+    }
+    console.log(greet3('Bharati'));
+
+    function add(n,m) {
+        return n+m;
+    }
+    console.log("5+10 =", add(5,10));
+
+    function addWithDefParams(n=2, m=3) {
+        return n+m;
+    }
+    console.log("addWithDefParams() = ", addWithDefParams());
+
+    // 14.2) Function Expressions
+    const square = function(x = 1) {
+        return x*x;
+    }
+    console.log("Square of 6 =", square(6));
+
+    // 14.3) Immediately invocable function expression - IIFEs
+    (function(){
+        console.log('IIFE Ran..');
+    })();
+
+    (function(name){
+        console.log('IIFE Ran... with', name);
+    })('Bharati');
+
+    // 14.4) Property Methods
+    // When function is added inside an object it's called a method
+    const todo = {
+        add: function() {
+            console.log("Add todo..");
+        },
+        edit: function(id) {
+            console.log("Edit todo", id);
+        },
+    }
+    // adding methods outside the object
+    todo.delete = function(id) {
+        console.log("Deleted todo item", id);
+    }
+    todo.add();
+    todo.edit(10);
+    todo.delete(10);
