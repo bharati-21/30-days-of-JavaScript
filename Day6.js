@@ -69,4 +69,4 @@
     for(let x in userInfo) {
         console.log(`${x} : ${userInfo[x]}`);
     }
-    console.clear();
+    //console.clear();
