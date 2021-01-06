@@ -70,3 +70,29 @@
         console.log(`${x} : ${userInfo[x]}`);
     }
     //console.clear();
+
+// 16. Block scope with let and const
+// Global Scope
+var s = 1;
+let t = 2;
+const con = 3;
+
+function testScope() {
+    var s = 4;
+    let t = 5;
+    const con = 6;
+    console.log('Function Scope:', s,t,con);
+}
+testScope();
+
+if(true) {
+    // Block scope
+    var s = 7;
+    let t = 8;
+    const con = 9;
+    console.log('Block(if) Scope:', s,t,con);
+}
+
+console.log('Global Scope:', s,t,con);
+// s becomes 7 in the global scope
+// var changes the global scope with the block level scope value. But the let and con variables retain their value.
