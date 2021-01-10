@@ -32,3 +32,10 @@ ii) Reference
 - Types are associated with values and not variables
 - JavaScript is a dynamic language. You do not define the type of data variable holds during DECLARATIONS
 - Same variable can hold multiple Types
+
+4. What is the DOM?
+- Document Object Model
+- Structured representation of the HTML document
+- Can be thought of as a tree of nodes or elements created by the Browser
+- JavaScript can be used to manipulate the DOM elements
+- The DOM is object oriented. Each element has it's own set of properties and methods
