@@ -19,6 +19,9 @@ function loadEventListeners() {
 
     // Clear tasks button
     clearBtn.addEventListener('click', clearTasks);
+
+    // Filtering tasks event
+    filter.addEventListener('keyup', filterTasks);
 }
 
 // Add task
@@ -71,4 +74,24 @@ function clearTasks(e) {
     while(taskList.firstChild) {
         taskList.removeChild(taskList.firstChild);
     }
+}
+
+// Filter task list items
+function filterTasks(e) {
+    const val = e.target.value.toLowerCase();
+    console.log(val);
+    document.querySelectorAll('.collection-item').forEach(function(task){
+        const item = task.firstChild.textContent;
+        if(item.toLowerCase().indexOf(val)!=-1) {
+            task.style.display = 'block';
+        }
+        else {
+            task.style.display = 'none';
+        }
+    });
+
+
+
+    // querySelector returns NodeList hence forEach() works
+    // elementByClass returns HTML which needs to be converted into an Array before using forEach()
 }
