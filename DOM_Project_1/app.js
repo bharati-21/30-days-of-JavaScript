@@ -13,6 +13,9 @@ loadEventListeners();
 function loadEventListeners() {
     // Add task event
     form.addEventListener('submit', addTask);
+
+    // Delete item event
+    taskList.addEventListener('click', deleteItem);
 }
 
 // Add task
@@ -44,3 +47,14 @@ function addTask(e) {
         taskInput.value = "";
     }
 } 
+
+// Delete item from task list
+function deleteItem(e) {
+    if(e.target.parentElement.classList.contains('delete-item')) {
+        console.log(e.target);
+        if(confirm('Are you sure you want to remove this task?')) {
+            e.target.parentElement.parentElement.remove();
+        }
+        // On clicking gives <i></i>. Hence selecting parent element's parent element (li)
+    }
+}
