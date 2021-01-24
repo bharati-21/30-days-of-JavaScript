@@ -16,6 +16,9 @@ function loadEventListeners() {
 
     // Delete item event
     taskList.addEventListener('click', deleteItem);
+
+    // Clear tasks button
+    clearBtn.addEventListener('click', clearTasks);
 }
 
 // Add task
@@ -56,5 +59,16 @@ function deleteItem(e) {
             e.target.parentElement.parentElement.remove();
         }
         // On clicking gives <i></i>. Hence selecting parent element's parent element (li)
+    }
+}
+
+// Clear the task list
+function clearTasks(e) {
+    e.preventDefault();
+    // 1st way
+    //    taskList.innerHTML = '';
+    // 2nd way and faster
+    while(taskList.firstChild) {
+        taskList.removeChild(taskList.firstChild);
     }
 }
