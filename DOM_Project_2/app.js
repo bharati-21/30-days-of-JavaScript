@@ -28,9 +28,29 @@ function calculateResult(e) {
         totalInterest.value = ((monthly * calculatedPayments)- principal).toFixed(2);
     }
     else {
-        console.log('Please check your numbers');
+        //console.log('Please check your numbers');
+
+        showError('Please check your numbers');
     }
+}
+
+function showError(error) {
+    const errorDiv = document.createElement('div')
+    errorDiv.className = 'alert alert-danger mb-3 mt-3';
+    errorDiv.appendChild(document.createTextNode(error));
+
+    // Get elements 
+    const card = document.querySelector('.card');
+    const heading = document.querySelector('.heading');
 
 
+    // Insert error above heading
+    card.insertBefore(errorDiv, heading);
 
+    // Clear error after 3 seconds
+    setTimeout(clearError, 3000);
+}
+
+function clearError() {
+    document.querySelector('.alert').remove();
 }
