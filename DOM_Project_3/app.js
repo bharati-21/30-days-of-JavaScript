@@ -21,7 +21,7 @@ const submitBtn = document.querySelector('#guess-btn');
 
 const message = document.querySelector('.message');
 
-const min = 1, max = 10, winNum = 2, guessLeft = 3;
+let min = 1, max = 10, winNum = 2, guessLeft = 3;
 
 
 // Assign UI min and max
@@ -44,12 +44,33 @@ function checkNum(e) {
 
     /// Check if the input number is equal to number
     if(guessNum == winNum) {
-        inputNum.disabled=true;
-        inputNum.style.border = '2px green solid';
-        setMessage(`Hurray, YOU WIN! correctly. The number is ${winNum}.`, 'green');
+        gameOver(true, `Hurray, YOU WON! The number is ${winNum}`);
+    }
+
+    else {
+        guessLeft-=1;
+        console.log(guessLeft)
+        if(guessLeft === 0) {
+            gameOver(false, `GAME OVER! You lost. The correct number was ${winNum}.`);
+        }
+        else {
+            inputNum.style.border = '2px solid red';
+
+            inputNum.value = "";
+            inputNum.focus();
+            setMessage(`${guessNum} is incorrect. Guesses Left: ${guessLeft}`, 'red');
+        }
     }
 }
 
+function gameOver(won, msg) {
+    inputNum.disabled = `${won}`;
+    
+    let color;
+    won === true ? color = 'green' : color = 'red';
+    inputNum.style.borderColor = color;
+    setMessage(msg, color);
+}
 
 function setMessage(msg, color) {
     message.style.color = color;
