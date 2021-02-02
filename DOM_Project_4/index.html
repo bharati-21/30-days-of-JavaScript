@@ -8,9 +8,51 @@
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
+        <style>
+            body {
+                background-color: #F1f5f8;
+            }
+
+            .vertical-center {
+                min-height: 100%;  
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+            }
+
+
+            #bg-color {
+                padding: 20px;                
+            }
+
+        </style>
+
         <title>Color Flipper</title>
     </head>
     <body>
+
+        <nav class="navbar sticky-top shadow navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <h3 href="#" class="navbar-text text-primary heading ms-3">Color Flipper</h3>
+                <h3 class="sub-heading navbar-text d-flex me-3">Simple Hex</h3>
+            </div>
+        </nav>
+
+        <div class="container vertical-center">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col mx-auto">
+                        <div class="text-content bg-dark rounded">
+                            <h1 id="bg-color" class="text-center text-white">Background Color: <span class="color"></span></h1>     
+                        </div>
+                        
+                        <button type="button" class="btn btn-outline-dark d-grid col-4 mt-5 mx-auto btn-lg">CLICK ME</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <!-- Option 1: Bootstrap Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
