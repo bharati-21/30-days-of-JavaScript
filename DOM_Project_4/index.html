@@ -21,6 +21,11 @@
             }
 
 
+            .text-content {
+                white-space: nowrap;
+                width:fit-content;
+            }
+
             #bg-color {
                 padding: 20px;                
             }
@@ -41,13 +46,11 @@
         <div class="container vertical-center">
             <div class="card-body">
                 <div class="row">
-                    <div class="col mx-auto">
-                        <div class="text-content bg-dark rounded">
-                            <h1 id="bg-color" class="text-center text-white">Background Color: <span class="color"></span></h1>     
+                    <div class="col">
+                        <div class="mx-auto text-content bg-dark rounded">
+                            <h1 id="bg-color" class="text-center text-white">Background Color: <span class="hexColor"></span></h1>     
                         </div>
-                        
-                        <button type="button" class="btn btn-outline-dark d-grid col-4 mt-5 mx-auto btn-lg">CLICK ME</button>
-
+                        <button type="button" class="btn btn-outline-dark d-grid col-4 mt-5 mx-auto btn-lg" id="click-btn">CLICK ME</button>
                     </div>
                 </div>
             </div>
