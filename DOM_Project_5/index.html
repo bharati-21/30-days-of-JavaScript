@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <title>Temperature Converter</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="text-center text-danger mt-3">
+                    <h1 class="heading">Temperature Converter</h1>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="col-md-6 mx-auto">
+                    <div class="card card-body mt-5">
+                        <form>
+                            <div class="form-body">
+                                <div class="cal-form">
+                                    <div class="temp1">
+                                        <label for="fah-temp" class="form-label">Temperature in Fahrenheit</label>
+                                        <input type="text" class="form-control" id="fah-temp" placeholder="Enter temperature in Degree Fahrenheit">
+                                    </div>
+                                    <div class="temp2 mt-3 mb-4">
+                                        <label for="cel-temp" class="form-label">Temperature in Celsius</label>
+                                        <input type="text" class="form-control" id="cel-temp" placeholder="Temperature in Degree Celsius" readonly>
+                                    </div>
+                                    <div class="text-center">
+                                        <input type="submit" value="Convert" class="btn btn-primary">
+                                    </div>
+                                </div>
+                            </div>                            
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+
+        <script src="app.js"></script>
+
+    </body>
+</html>
