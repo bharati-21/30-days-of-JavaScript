@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: rgb(202, 202, 241);
+    font-family: "Open Sans", sans-serif;
+    background: hsl(210, 36%, 96%); 
+    color: sl(209, 61%, 16%);
+    line-height: 1.5;
+    font-size: 0.875rem;
+}
+
+nav {
+    background-color: white;
+    margin-top: 0;
+}
+
+nav h1 {
+    padding: 5px;
+    font-size: 32px;
+}
