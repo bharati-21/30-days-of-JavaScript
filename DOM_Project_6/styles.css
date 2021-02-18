@@ -10,16 +10,31 @@ body {
     font-family: "Open Sans", sans-serif;
     background: hsl(210, 36%, 96%); 
     color: sl(209, 61%, 16%);
-    line-height: 1.5;
-    font-size: 0.875rem;
 }
 
 nav {
     background-color: white;
     margin-top: 0;
+    filter: drop-shadow(2px 0 3px #888);
+    padding: 5px 20px;
 }
 
-nav h1 {
+.nav-header h1 {
     padding: 5px;
     font-size: 32px;
+    float: left;
+}
+
+.nav-toggle {
+    float: right;
+}
+
+.nav-header {
+    overflow: auto;
+}
+
+.nav-toggle i {
+    color: rgb(130, 184, 248);
+    padding: 5px;
+    background-color: white;
 }
