@@ -21,20 +21,116 @@ nav {
 
 .nav-header h1 {
     padding: 5px;
-    font-size: 32px;
+    font-size: 40px;
     float: left;
 }
 
 .nav-toggle {
     float: right;
+    margin-top: 8px;
 }
 
 .nav-header {
     overflow: auto;
 }
 
+.fa-bars:hover {
+    color:hsl(209, 34%, 30%);
+    transform: rotate(90deg);
+}
+
+/*
+@keyframes rotate {
+    0% {
+        transform: skewY(0deg);
+    }
+
+    100% {
+        transform: skewY(-90deg);
+    }
+} */
+
 .nav-toggle i {
-    color: rgb(130, 184, 248);
+    color: hsl(205, 78%, 60%);
     padding: 5px;
     background-color: white;
 }
+
+.links {
+    list-style: none;
+}
+
+.links li {
+    margin: 10px 15px;
+}
+
+.links li a {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: block;
+    transition: all 0.3s linear;
+    font-family: "Open Sans", sans-serif;
+    color:hsl(209, 34%, 30%);
+    text-align: right;
+}
+
+.links a:hover {
+    color: hsl(205, 78%, 60%);
+    padding-right: 1.5rem;
+    text-decoration: underline;
+}
+
+
+
+.div-links {
+    clear: both;
+    overflow: auto;
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    float: right;
+    transition: all 0.3s linear;
+}
+
+.show-links {
+    height: 10rem;
+    float: right;
+}
+
+.social-links {
+    list-style: none;
+    height: 0;
+    overflow: hidden;
+    float: left;
+    transition: all 0.3s linear;
+}
+
+.show-social-links {
+    height: 10rem;
+}
+
+.social-links li {
+    margin: 10px 15px;
+}
+
+
+.social-links li a {
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    display: block;
+    transition: all 0.3s linear;
+    color:hsl(209, 83%, 24%)
+
+}
+
+.social-links li a:hover {
+    color: hsl(205, 78%, 60%);
+    padding-left: 1.5rem;
+    text-decoration: underline;
+}
+
+
